@@ -10,7 +10,6 @@ app.config(function($routeProvider) {
 
 app.controller('templateCtrl', function($scope){
   $scope.colors = _.shuffle([
-    "#ec008c",
     "#e43e22",
     "#a1ce5e",
     "#1a86a8",
@@ -25,8 +24,8 @@ app.controller('templateCtrl', function($scope){
     $scope.bgColor = $scope.colors[Math.floor(Math.random() * $scope.colors.length)];
   };
 
-  $scope.viewCard = function (buttonUrl) {
-    console.log("clicked " + buttonUrl);
+  $scope.viewCard = function (card) {
+    console.log("clicked " + card.buttonUrl);
     // make closable modal popover
     // insert buttonUrl to doc display code
   }
@@ -41,7 +40,7 @@ app.controller('templateCtrl', function($scope){
     },
     {
       title: "The Future of Autonomous Vehicles",
-      description: "Graduate level trends discussion geared toward autnomous vehicle technology.",
+      description: "Graduate level trends discussion geared toward Autonomous vehicle technology.",
       buttonText: "View",
       buttonUrl: "test",
       priority: 2
