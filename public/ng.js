@@ -86,9 +86,57 @@ app.controller('templateCtrl', function($scope){
       description: "Graduate level IEEE 830 conforming SRS documentation created around the extended requirements of the popular Slack messaging utility.",
       buttonText: "View",
       buttonUrl: "test",
-      priority: 5
+      priority: 6
     }
   ]);
+
+  $scope.cardsVideo = [
+    {
+      title: "Impact China 2013: Dreams are meant to be fulfilled!",
+      description: "Video detailing my undergraduate study abroad experience in China with The College of Business.",
+      buttonText: "Watch Video",
+      buttonUrl: "test",
+      priority: 1
+    },
+    {
+      title: "4k For Cancer Team Portland: Songs of the 4k",
+      description: "Candid video of my teammates from a 2012 cross-country charity bike ride for The Ulman Cancer Fund. Features our favorite music.",
+      buttonText: "Watch Video",
+      buttonUrl: "test",
+      priority: 2
+    },
+    {
+      title: "Experiencing Leadership Learning Community at Frostburg State University",
+      description: "One University. A World of Experiences. This video aims to capture the excitement surrounding Frostburg's leadership learning communities.",
+      buttonText: "Watch Video",
+      buttonUrl: "test",
+      priority: 2
+    }
+  ];
+
+  $scope.cardsDesign = [
+    {
+      title: "Website Design for Local Non-Profit",
+      description: "Maryland Neighborly Networks, Inc. needed a simple website to unify communications and access to essential I.T. functions.",
+      buttonText: "View",
+      buttonUrl: "test",
+      priority: 1
+    },
+    {
+      title: "Website Design and Internet Marketing for Local Business",
+      description: "RTS Environmental Services, Inc. needed to boost sales leads through internet marketing and targeted advertising.",
+      buttonText: "View",
+      buttonUrl: "test",
+      priority: 1
+    },
+    {
+      title: "Website Design and Internet Marketing for Local Business",
+      description: "10 Clarke Place wanted to capture and expand increased marketshare through internet marketing with an easy to maintain website.",
+      buttonText: "View",
+      buttonUrl: "test",
+      priority: 1
+    }
+  ];
 
   $scope.cardsSdlc = [
     {
@@ -176,5 +224,6 @@ app.controller('templateCtrl', function($scope){
       priority: 1
     }
   ];
+
 
 });
