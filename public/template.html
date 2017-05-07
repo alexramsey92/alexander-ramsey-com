@@ -16,13 +16,26 @@
   <div class="container-fluid">
     <div class="card-columns">
       <div ng-repeat="card in cards | orderBy: 'priority'">
-        <div class="card card-inverse" ng-style="{background: colors[$index % colors.length]}">
+        <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
           <div class="card-block">
             <h4 class="card-title">{{card.title}}</h4>
             <p class="card-text">{{card.description}}</p>
-            <button ng-click="viewCard(card)" class="btn btn-outline-secondary btn-sm">{{card.buttonText}}</button>
+            <!--modal button -->
+            <button class="btn btn-outline-secondary btn-sm" ng-click="viewCard(card)" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal{{card.id}}">
+            {{card.buttonText}}
+            </button>
+
           </div>
         </div>
+        <!-- modal -->
+        <div class="modal fade" id="modal{{card.id}}" tabindex="{{card.id}}" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              {{card.buttonUrl}}
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -33,7 +46,7 @@
     <p class="lead">Video Editing</p>
     <div class="card-columns">
       <div ng-repeat="card in cardsVideo">
-        <div class="card card-inverse" ng-style="{background: colors[$index % colors.length]}">
+        <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
           <div class="card-block">
             <h4 class="card-title">{{card.title}}</h4>
             <p class="card-text">{{card.description}}</p>
@@ -50,7 +63,7 @@
     <p class="lead">Web and Graphic Design</p>
     <div class="card-columns">
       <div ng-repeat="card in cardsDesign">
-        <div class="card card-inverse" ng-style="{background: colors[$index % colors.length]}">
+        <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
           <div class="card-block">
             <h4 class="card-title">{{card.title}}</h4>
             <p class="card-text">{{card.description}}</p>
@@ -67,7 +80,7 @@
     <p class="lead">Software Development Lifecycle Methodology Series</p>
     <div class="card-columns">
       <div ng-repeat="card in cardsSdlc">
-        <div class="card card-inverse" ng-style="{background: colors[$index % colors.length]}">
+        <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
           <div class="card-block">
             <h4 class="card-title">{{card.title}}</h4>
             <p class="card-text">{{card.description}}</p>
@@ -78,7 +91,6 @@
     </div>
   </div>
 </div>
-
 
 <footer class="footer">
   <div class="container-fluid">
