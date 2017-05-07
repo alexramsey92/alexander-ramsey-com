@@ -20,7 +20,7 @@
           <div class="card-block">
             <h4 class="card-title">{{card.title}}</h4>
             <p class="card-text">{{card.description}}</p>
-            
+
             <!--modal button -->
             <button class="btn btn-outline-secondary btn-sm" ng-click="viewCard(card)" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal{{card.id}}">
             {{card.buttonText}}
@@ -37,7 +37,8 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h5 class="modal-title text-right">{{card.title}}</h5>
               </div>
-              {{card.buttonUrl}}
+              <iframe ng-src="{{card.buttonUrl}}"></iframe>
+              <!-- {{card.buttonUrl}} -->
               <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
               </div>

@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
   })
 });
 
-app.controller('templateCtrl', function($scope){
+app.controller('templateCtrl', function($scope, $sce){
 
   $scope.cardColors = _.shuffle([
     "#e43e22",
@@ -25,11 +25,16 @@ app.controller('templateCtrl', function($scope){
     $scope.bgColor = $scope.cardColors[Math.floor(Math.random() * $scope.cardColors.length)];
   };
 
+  // set as trusted url in sce module
+  // https://docs.google.com/viewer?embedded=true&url=
+
   $scope.viewCard = function (card) {
     console.log("clicked " + card.buttonUrl);
+    $scope.url = "https://docs.google.com/viewer?embedded=true&url=" + card.buttonUrl;
+    console.log($scope.url);
     // make closable modal popover
     // insert buttonUrl to doc display code
-  }
+  };
 
   $scope.cards = _.shuffle([
     {
@@ -37,7 +42,7 @@ app.controller('templateCtrl', function($scope){
       title: "Resume",
       description: "My latest comprehensive skills and experience resume.",
       buttonText: "Open PDF",
-      buttonUrl: "https://docs.google.com/viewer?embedded=true&url=www.alexanderramsey.com/pdf",
+      buttonUrl: "www.alexanderramsey.com/resume.pdf",
       priority: 1
     },
     {
@@ -250,6 +255,5 @@ app.controller('templateCtrl', function($scope){
       priority: 1
     }
   ];
-
 
 });
