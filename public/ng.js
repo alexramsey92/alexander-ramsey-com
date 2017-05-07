@@ -9,6 +9,7 @@ app.config(function($routeProvider) {
 });
 
 app.controller('templateCtrl', function($scope){
+
   $scope.cardColors = _.shuffle([
     "#e43e22",
     "#a1ce5e",
@@ -36,7 +37,7 @@ app.controller('templateCtrl', function($scope){
       title: "Resume",
       description: "My latest comprehensive skills and experience resume.",
       buttonText: "Open PDF",
-      buttonUrl: "www.alexanderramsey.com/pdf",
+      buttonUrl: "https://docs.google.com/viewer?embedded=true&url=www.alexanderramsey.com/pdf",
       priority: 1
     },
     {
@@ -44,7 +45,7 @@ app.controller('templateCtrl', function($scope){
       title: "The Future of Autonomous Vehicles",
       description: "Graduate level trends discussion geared toward Autonomous vehicle technology.",
       buttonText: "View",
-      buttonUrl: "test",
+      buttonUrl: "test derp",
       priority: 2
     },
     {
