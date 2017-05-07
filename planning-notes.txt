@@ -1,0 +1,54 @@
+Alexander Ramsey dot com 2017
+
+Single page with tiles to display work performed and various links to other items
+
+
+
+
+
+Example index code for document displays:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <span>Icon test</span>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <iframe src='https://docs.google.com/viewer?embedded=true&url=http://alexanderramsey.com/Ramsey_Week-01_Waterfall.docx' height=300px frameborder='0'></iframe>
+      </div>
+      <div class="col-md-6">
+        <iframe src='https://docs.google.com/viewer?embedded=true&url=http://alexanderramsey.com/resume.pdf' height=300px frameborder='0'></iframe>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <iframe src='https://docs.google.com/viewer?embedded=true&url=http://alexanderramsey.com/Ramsey_Week-01_Waterfall.docx' height=300px frameborder='0'></iframe>
+      </div>
+      <div class="col-md-6">
+        <iframe src='https://docs.google.com/viewer?embedded=true&url=http://alexanderramsey.com/resume.pdf' height=300px frameborder='0'></iframe>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+      var viewportX = $(window).width() / 2
+      $("iframe").css('width', viewportX)
+    </script>
+
+  </body>
+</html>
