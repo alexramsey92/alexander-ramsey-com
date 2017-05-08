@@ -8,11 +8,17 @@ app.config(function($routeProvider) {
   })
 });
 
-app.controller('templateCtrl', function($scope, $sce){
+app.controller('templateCtrl', function($scope){
+
+  angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {
+    // Completely disable SCE.  For demonstration purposes only!
+    // Do not use in new projects or libraries.
+    $sceProvider.enabled(false);
+  });
 
   $scope.cardColors = _.shuffle([
     "#e43e22",
-    "#a1ce5e",
+    "#789A46",
     "#1a86a8",
     "#002b54",
     "#985396",
@@ -22,6 +28,7 @@ app.controller('templateCtrl', function($scope, $sce){
   ]);
 
   $scope.getRandomColor = function () {
+    // some bullshit I stole from stackoverflow
     $scope.bgColor = $scope.cardColors[Math.floor(Math.random() * $scope.cardColors.length)];
   };
 
@@ -30,8 +37,6 @@ app.controller('templateCtrl', function($scope, $sce){
 
   $scope.viewCard = function (card) {
     console.log("clicked " + card.buttonUrl);
-    $scope.url = "https://docs.google.com/viewer?embedded=true&url=" + card.buttonUrl;
-    console.log($scope.url);
     // make closable modal popover
     // insert buttonUrl to doc display code
   };
@@ -42,7 +47,7 @@ app.controller('templateCtrl', function($scope, $sce){
       title: "Resume",
       description: "My latest comprehensive skills and experience resume.",
       buttonText: "Open PDF",
-      buttonUrl: "www.alexanderramsey.com/resume.pdf",
+      buttonUrl: "https://docs.google.com/viewer?embedded=true&url=www.alexanderramsey.com/resume.pdf",
       priority: 1
     },
     {

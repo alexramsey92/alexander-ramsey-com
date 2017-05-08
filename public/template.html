@@ -16,6 +16,7 @@
   <div class="container-fluid">
     <div class="card-columns">
       <div ng-repeat="card in cards | orderBy: 'priority'">
+
         <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
           <div class="card-block">
             <h4 class="card-title">{{card.title}}</h4>
@@ -38,7 +39,6 @@
                 <h5 class="modal-title text-right">{{card.title}}</h5>
               </div>
               <iframe ng-src="{{card.buttonUrl}}"></iframe>
-              <!-- {{card.buttonUrl}} -->
               <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
               </div>
