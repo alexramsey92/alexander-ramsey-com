@@ -8,13 +8,7 @@ app.config(function($routeProvider) {
   })
 });
 
-app.controller('templateCtrl', function($scope){
-
-  angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {
-    // Completely disable SCE.  For demonstration purposes only!
-    // Do not use in new projects or libraries.
-    $sceProvider.enabled(false);
-  });
+app.controller('templateCtrl', function($scope, $sce){
 
   $scope.cardColors = _.shuffle([
     "#e43e22",
@@ -47,7 +41,7 @@ app.controller('templateCtrl', function($scope){
       title: "Resume",
       description: "My latest comprehensive skills and experience resume.",
       buttonText: "Open PDF",
-      buttonUrl: "https://docs.google.com/viewer?embedded=true&url=www.alexanderramsey.com/resume.pdf",
+      buttonUrl: $sce.trustAsResourceUrl("https://docs.google.com/viewer?embedded=true&url=www.alexanderramsey.com/resume.pdf"),
       priority: 1
     },
     {
