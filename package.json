@@ -1,19 +1,21 @@
 {
   "name": "alexanderramsey.com-2017",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A personal tile based portfolio website designed to get me out of my current, stupid, lifeless nowhere job.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start"
   },
-  "author": "",
+  "keywords": [
+      "heroku"
+  ],
+  "author": "Alexander R Ramsey",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.18.8",
-    "express": "^4.15.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-nodemon": "^2.2.1",
-    "gulp-sass": "^3.1.0"
+    "express": "^4.15.2"
+  },
+  "engines": {
+    "node": "4.1.1"
   }
 }
