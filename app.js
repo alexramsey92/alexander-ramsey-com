@@ -3,7 +3,7 @@ var express = require('express');
 // call app instance on express lib
 var app = express();
 // set port var for app instance
-app.set('port', 3101);
+app.set('port', (process.env.PORT || 5000));
 // use express static server to display public directory
 app.use(express.static('public'))
 // on app.get:3000 serve and display console output
