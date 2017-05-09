@@ -4,8 +4,7 @@
   "description": "A personal tile based portfolio website designed to get me out of my current, stupid, lifeless nowhere job.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
       "heroku"
