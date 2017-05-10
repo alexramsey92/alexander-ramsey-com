@@ -41,7 +41,7 @@ app.controller('templateCtrl', function($scope, $sce){
       title: "Resume",
       description: "My latest comprehensive skills and experience resume.",
       buttonText: "Open PDF",
-      buttonUrl: $sce.trustAsResourceUrl("https://docs.google.com/viewer?embedded=true&url=www.alexanderramsey.com/resume.pdf"),
+      buttonUrl: $sce.trustAsResourceUrl("https://docs.google.com/viewer?embedded=true&url=documents/Alexander-Ramsey-Resume.pdf"),
       priority: 1
     },
     {
@@ -162,7 +162,7 @@ app.controller('templateCtrl', function($scope, $sce){
       title: "Waterfall Software Development Methodology",
       description: "A short informative paper on the Waterfall SDM.",
       buttonText: "View",
-      buttonUrl: "test",
+      buttonUrl: "",
       priority: 1
     },
     {
