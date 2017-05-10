@@ -14,6 +14,7 @@
 <!-- main array -->
 <div class="jumbotron">
   <div class="container-fluid">
+    <p class="lead">My Latest Work</p>
     <div class="card-columns">
       <div ng-repeat="card in cards | orderBy: 'priority'">
         <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
@@ -49,7 +50,7 @@
 <!-- web design -->
 <div class="jumbotron">
   <div class="container-fluid">
-    <p class="lead">Website and Graphic Design</p>
+    <p class="lead">Website and Graphic Design Experience</p>
     <div class="card-columns">
       <div ng-repeat="card in cardsDesign | orderBy: 'priority'">
         <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
@@ -68,7 +69,7 @@
 <!-- videos -->
 <div class="jumbotron">
   <div class="container-fluid">
-    <p class="lead">Video Editing</p>
+    <p class="lead">Video Editing Experience</p>
     <div class="card-columns">
       <div ng-repeat="card in cardsVideo | orderBy: 'priority'">
         <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
@@ -103,7 +104,7 @@
 <!-- sdlc papers -->
 <div class="jumbotron">
   <div class="container-fluid">
-    <p class="lead">Software Development Lifecycle Methodologies</p>
+    <p class="lead">Software Development Lifecycle Methodology Articles</p>
     <div class="card-columns">
       <div ng-repeat="card in cardsSdlc | orderBy: 'priority'">
         <div class="card card-inverse" ng-style="{background: cardColors[$index % cardColors.length]}">
