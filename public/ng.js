@@ -35,19 +35,23 @@ app.controller('templateCtrl', function($scope, $sce){
     // insert buttonUrl to doc display code
   };
 
+  var baseUrl = location.origin;
+  console.log(baseUrl);
+  var docUrl = "https://docs.google.com/viewer?embedded=true&url=" + baseUrl;
+  console.log(docUrl);
   $scope.cards = _.shuffle([
     {
       id: 1,
       title: "Resume",
       description: "My latest comprehensive skills and experience resume.",
       buttonText: "Open PDF",
-      buttonUrl: $sce.trustAsResourceUrl("https://docs.google.com/viewer?embedded=true&url=documents/Alexander-Ramsey-Resume.pdf"),
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Alexander-Ramsey-Resume.pdf"),
       priority: 1
     },
     {
       id: 2,
       title: "The Future of Autonomous Vehicles",
-      description: "Graduate level trends discussion geared toward Autonomous vehicle technology.",
+      description: "Trends discussion geared toward Autonomous vehicle technology.",
       buttonText: "View",
       buttonUrl: "test derp",
       priority: 2
@@ -55,7 +59,7 @@ app.controller('templateCtrl', function($scope, $sce){
     {
       id: 3,
       title: "Next Generation (5G) Cellular Networks",
-      description: "Graduate level trends discussion of fifth generation cellular technology.",
+      description: "Trends discussion of fifth generation cellular technology.",
       buttonText: "View",
       buttonUrl: "test",
       priority: 2
@@ -63,7 +67,7 @@ app.controller('templateCtrl', function($scope, $sce){
     {
       id: 4,
       title: "Application User Interface Analysis and Redesign",
-      description: "Graduate level analysis of Adobe Illustrator graphic design software including recommendations for usability.",
+      description: "Analysis of Adobe Illustrator graphic design software including recommendations for usability.",
       buttonText: "View",
       buttonUrl: "test",
       priority: 3
@@ -71,7 +75,7 @@ app.controller('templateCtrl', function($scope, $sce){
     {
       id: 5,
       title: "AngularJS Data Grid UIX Study",
-      description: "Graduate level user interface analysis, implementing a data grid view that supports CRUD operations.",
+      description: "User interface concept, analysis, and implementation of a data grid view that supports CRUD operations.",
       buttonText: "View",
       buttonUrl: "test",
       priority: 4
@@ -87,7 +91,7 @@ app.controller('templateCtrl', function($scope, $sce){
     {
       id: 7,
       title: "Slack Technologies Software Requirements Specification Part One: Basic Requirements",
-      description: "Graduate level SRS documentation centered around core requirements of the popular Slack messaging utility.",
+      description: "SRS documentation centered around core requirements of the popular Slack messaging utility.",
       buttonText: "View",
       buttonUrl: "test",
       priority: 5
@@ -95,7 +99,7 @@ app.controller('templateCtrl', function($scope, $sce){
     {
       id: 8,
       title: "Slack Technologies Software Requirements Specification Part Two: IEEE 830 Conformant Format",
-      description: "Graduate level IEEE 830 conforming SRS documentation created around the extended requirements of the popular Slack messaging utility.",
+      description: "IEEE 830 conforming SRS documentation created around the extended requirements of the popular Slack messaging utility.",
       buttonText: "View",
       buttonUrl: "test",
       priority: 6
