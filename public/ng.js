@@ -82,14 +82,6 @@ app.controller('templateCtrl', function($scope, $sce){
       priority: 4
     },
     {
-      id: 6,
-      title: "Enterprise Architecture and The TOGAF Framework",
-      description: "A presentation on implementing the TOGAF framework to establish Enterprise Architecture for a Large Enterprise Corporation",
-      buttonText: "View",
-      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_TOGAF.pptx"),
-      priority: 5
-    },
-    {
       id: 7,
       title: "Slack Technologies Software Requirements Specification Part One: Basic Requirements",
       description: "SRS documentation centered around core requirements of the popular Slack messaging utility.",
