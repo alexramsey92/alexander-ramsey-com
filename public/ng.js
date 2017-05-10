@@ -87,8 +87,8 @@ app.controller('templateCtrl', function($scope, $sce){
       description: "SRS documentation centered around core requirements of theoretical Portfolio Management Solution. Includes GANTT burndown and cost estimation for work completion.",
       buttonText: "View",
       buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_SRS_PMS.docx"),
-      priority: 5      
-    }
+      priority: 5
+    },
     {
       id: 7,
       title: "Slack Technologies Software Requirements Specification Part One: Basic Requirements",
