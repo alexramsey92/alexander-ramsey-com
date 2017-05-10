@@ -82,6 +82,14 @@ app.controller('templateCtrl', function($scope, $sce){
       priority: 4
     },
     {
+      id: 6,
+      title: "Portfolio Management Solution: IEEE 830 Conformant Software Requirements Specification",
+      description: "SRS documentation centered around core requirements of theoretical Portfolio Management Solution. Includes GANTT burndown and cost estimation for work completion.",
+      buttonText: "View",
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_SRS_PMS.docx"),
+      priority: 5      
+    }
+    {
       id: 7,
       title: "Slack Technologies Software Requirements Specification Part One: Basic Requirements",
       description: "SRS documentation centered around core requirements of the popular Slack messaging utility.",
