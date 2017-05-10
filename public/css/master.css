@@ -31,3 +31,6 @@ iframe {
       overflow-y: scroll;
   }
 }
+.card-img-top {
+  max-width: 100%;
+}

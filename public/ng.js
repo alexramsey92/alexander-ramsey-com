@@ -148,24 +148,48 @@ app.controller('templateCtrl', function($scope, $sce){
       title: "Website Design for Local Non-Profit",
       description: "Maryland Neighborly Networks, Inc. needed a simple website to unify communications and access to essential I.T. functions.",
       buttonText: "View",
-      buttonUrl: $sce.trustAsResourceUrl("http://mdnetworks.org"),
+      imgUrl: location.origin + "/img/mnn-desktop.PNG",
       priority: 1
     },
     {
       id: 53,
       title: "Website Design and Internet Marketing for Local Business",
       description: "RTS Environmental Services, Inc. needed to boost sales leads through internet marketing and targeted advertising.",
-      buttonText: "View",
-      buttonUrl: $sce.trustAsResourceUrl("http://rtsenviro.com"),
+      imgUrl: location.origin + "/img/rts-desktop.PNG",
       priority: 1
     },
     {
       id: 54,
       title: "Website Design and Internet Marketing for Local Business",
       description: "10 Clarke Place wanted to capture and expand increased marketshare through internet marketing with an easy to maintain website.",
-      buttonText: "View",
-      buttonUrl: $sce.trustAsResourceUrl("http://10clarke.com"),
+      imgUrl: location.origin + "/img/Screenshot_2015-01-21-15-30-33.png",
       priority: 1
+    },
+    {
+      id: 55,
+      title: "Custom Application Development for Financial Services Company",
+      description: "An Investment Advisory firm wanted to create an asset allocation utility to guide clientele through the sign up process for a newly created Exchange-Traded-Fund product. A working prototype was developed and delivered to the client.",
+      priority: 1
+    },
+    {
+      id: 56,
+      title: "Logo Design for IBM Delivery Center",
+      description: "",
+      imgUrl: location.origin + "/img/abl-cic-logo02_Artboard 17.png",
+      priority: 1
+    },
+    {
+      id: 57,
+      title: "Logo Design for Non-Profit",
+      description: "",
+      imgUrl: location.origin + "/img/Full Citizenship of Maryland, Inc_concept five.png",
+      priority: 1
+    },
+    {
+      id: 58,
+      title: "Logo Design for Local Business Conference",
+      description: "",
+      imgUrl: location.origin + "/img/innovateintegratemotivate.jpg"
     }
   ];
 
