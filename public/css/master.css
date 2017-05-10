@@ -1,44 +1,33 @@
 iframe {
   height: 100%;
 }
-
 @media only screen and (min-device-width : 300px) and (max-device-width : 800px) {
-
   .modal-lg {
     margin-top: 60px;
     width: auto;
     max-width: 95%;
   }
-
   .modal-dialog,
   .modal-content {
       height: 90%;
   }
-
   .modal-body {
       max-height: calc(80% - 60px);
       overflow-y: scroll;
   }
-
 }
-
-
 @media only screen  and (min-width : 800px) {
-
   .modal-lg {
     margin-top: 60px;
     width: auto;
     max-width: 1000px;
   }
-
   .modal-dialog,
   .modal-content {
       height: 90%;
   }
-
   .modal-body {
       max-height: calc(80% - 65px);
       overflow-y: scroll;
   }
-
 }
