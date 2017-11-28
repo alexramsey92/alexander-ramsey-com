@@ -46,7 +46,7 @@ app.controller('templateCtrl', function($scope, $sce){
       title: "Resume",
       description: "My latest comprehensive skills and experience resume.",
       buttonText: "Read My Resume",
-      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Alexander_Ramsey_Resume.pdf"),
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Alexander-Ramsey-Resume.docx"),
       priority: 1
     },
     {
