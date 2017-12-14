@@ -120,6 +120,14 @@ app.controller('templateCtrl', function($scope, $sce){
       buttonText: "View",
       buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey-SoftwareDetailDesignDocument-SWEN646.docx"),
       priority: 4
+    },
+    {
+      id: 11,
+      title: "Software Test Plan and Results Documentation",
+      description: "Semester long Graduate project exploring various testing methods in a Java environment with JUnit.",
+      buttonText: "View",
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_SWEN647_P3_A9.docx"),
+      priority: 5
     }
   ]);
 
