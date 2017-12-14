@@ -10,7 +10,7 @@ app.config(function($routeProvider) {
 
 app.controller('templateCtrl', function($scope, $sce){
 
-  $scope.cardColors = _.shuffle([
+  $scope.cardColors = ([
     "#e43e22",
     "#789A46",
     "#1a86a8",
@@ -21,10 +21,10 @@ app.controller('templateCtrl', function($scope, $sce){
     "#b38e50"
   ]);
 
-  $scope.getRandomColor = function () {
-    // some bullshit I stole from stackoverflow
-    $scope.bgColor = $scope.cardColors[Math.floor(Math.random() * $scope.cardColors.length)];
-  };
+  // $scope.getRandomColor = function () {
+  //   // some bullshit I stole from stackoverflow
+  //   $scope.bgColor = $scope.cardColors[Math.floor(Math.random() * $scope.cardColors.length)];
+  // };
 
   // set as trusted url in sce module
   // https://docs.google.com/viewer?embedded=true&url=
@@ -55,7 +55,7 @@ app.controller('templateCtrl', function($scope, $sce){
       description: "Trends discussion geared toward Autonomous vehicle technology.",
       buttonText: "View",
       buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_Autonomous_Vehicles.docx"),
-      priority: 2
+      priority: 20
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ app.controller('templateCtrl', function($scope, $sce){
       description: "Trends discussion of fifth generation cellular technology.",
       buttonText: "View",
       buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_5G_Trends.docx"),
-      priority: 2
+      priority: 20
     },
     {
       id: 4,
@@ -111,6 +111,14 @@ app.controller('templateCtrl', function($scope, $sce){
       description: "A follow up to the application user interface analysis of Adobe Illustrator. Contextual inquiry of participants testing their artistic ability in the application.",
       buttonText: "View",
       buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_Contextual_Inquiry_Illustrator.docx"),
+      priority: 4
+    },
+    {
+      id: 10,
+      title: "Object Oriented Design and Implementation in Java",
+      description: "Semester long Graduate project exploring the use of Object Oriented and Aspect Oriented design using Java.",
+      buttonText: "View",
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey-SoftwareDetailDesignDocument-SWEN646.docx"),
       priority: 4
     }
   ]);
@@ -169,6 +177,7 @@ app.controller('templateCtrl', function($scope, $sce){
       id: 55,
       title: "Custom Application Development for Financial Services Company",
       description: "An Investment Advisory firm wanted to create an asset allocation utility to guide clientele through the sign up process for a newly created Exchange-Traded-Fund product. A working prototype was developed and delivered to the client.",
+      imgUrl: location.origin + "/img/aim-app.png",
       priority: 1
     },
     {
