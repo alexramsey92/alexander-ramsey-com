@@ -136,6 +136,38 @@ app.controller('templateCtrl', function($scope, $sce){
       buttonText: "View",
       buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey_SWEN647_P1_A4.docx"),
       priority: 5
+    },
+    {
+      id: 13,
+      title: "Oracle Database Use Case and Design Project",
+      description: "Scope of work, Entity Relationship Diagram, Data Definition Language, and Data Manipulation Language for an Oracle database designed to support data logging requirements for an IP based phone server.",
+      buttonText: "View",
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/DBST 651 Ramsey Lab Project Final.docx"),
+      priority: 6
+    },
+    {
+      id: 14,
+      title: "Object Oriented & Object Relational Mapping Databases",
+      description: "Exploration of the Impedance Mismatch and Object oriented relational mapping (ORM) systems.",
+      buttonText: "View",
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/DBST 651 Ramsey Term Paper.docx"),
+      priority: 7
+    },
+    {
+      id: 15,
+      title: "Large Scale Application I.T. Infrastructure Design and SOW",
+      description: "A Group Project which identifies the hardware and software I.T. infrastructure required of a large scale application hosting environment for a public university.",
+      buttonText: "View",
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/GroupProject_Team5_PP_v11.pptx"),
+      priority: 7
+    },
+    {
+      id: 16,
+      title: "The Influence of Emotional Intelligence on Project Outcomes",
+      description: "Literature Review of Emotional Intelligence (EI) which addresses the meaning, impact, and relationship this concept has on I.T. project environments.",
+      buttonText: "View",
+      buttonUrl: $sce.trustAsResourceUrl(docUrl + "/documents/Ramsey-Emotional-Intelligence.docx"),
+      priority: 7
     }
   ]);
 
